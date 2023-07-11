@@ -9,12 +9,12 @@ export class CarsService {
 
 
     private cars:Car[] = [
-        {
+        /* {
             id: uuid(),
             brand: 'Toyota',
             model: 'Corolla'
-        },
-        {
+        }, */
+        /* {
             id: uuid(),
             brand: 'Honda',
             model: 'Jazz'
@@ -23,7 +23,7 @@ export class CarsService {
             id: uuid(),
             brand: 'Jeep',
             model: 'Compass'
-        }
+        } */
     ]
     carsFound: any;
 
@@ -153,6 +153,15 @@ export class CarsService {
 
         return car
     }   
+
+
+    //Nos traemos el arreglo de cars del seedi
+
+    fillCarsWithSeedData(cars: Car[]){
+        this.cars = cars
+    }
+
+
     }
 
     
